@@ -4,6 +4,14 @@ alias ...="cd ../.."
 alias h='cd ~'
 alias c='clear'
 
+alias g:c='php artisan generate:controller'
+alias g:m='php artisan generate:model'
+alias g:mig='php artisan generate:migration'
+alias g:r='php artisan generate:resource'
+alias g:s='php artisan generate:seed'
+alias g:v='php artisan generate:view'
+alias grep='grep --color=auto'
+
 function serve() {
 	if [[ "$1" && "$2" ]]
 	then
