@@ -1,8 +1,8 @@
 class Homestead
   def Homestead.configure(config, settings)
     # Configure The Box
-    config.vm.box = "laravel/homestead"
-    config.vm.hostname = "homestead"
+    config.vm.box = "topka/homestead"
+    config.vm.hostname = "topka_homestead"
 
     # Configure A Private Network IP
     config.vm.network :private_network, ip: settings["ip"] ||= "192.168.10.10"
