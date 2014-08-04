@@ -2,7 +2,7 @@ class Homestead
   def Homestead.configure(config, settings)
     # Configure The Box
     config.vm.box = "topka/homestead"
-    config.vm.hostname = "topka.homestead"
+    config.vm.hostname = "topka"
 
     # Configure A Private Network IP
     config.vm.network :private_network, ip: settings["ip"] ||= "192.168.10.10"
